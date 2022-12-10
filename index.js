@@ -1,5 +1,4 @@
 const express = require('express')
-let port = 2000
 
 const app = express()
 
@@ -10,6 +9,11 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
 
-app.listen(port, () => {
-    console.log('Working');
-})
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 2000;
+}
+
+app.listen(port, function() {
+  console.log("Sucessfully started server");
+});
