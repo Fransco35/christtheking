@@ -1,0 +1,78 @@
+.header {
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(rgba($color-primary-dark, 0.55), 
+   rgba($color-primary-dark, 0.68)),
+   url('../img/pupils.jfif');
+   background-size: cover;
+   background-position: center;
+
+   color: $color-grey-light-1;
+   padding: 2rem;
+
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+
+   &__title {
+       font-family: "Playfair Display SC", serif;
+       font-size: 2.5rem;
+       width: 50vw;
+       align-self: start;
+
+       @media screen and(max-width:850px) {
+           font-size: 2rem;
+           align-self: center;
+           text-align: center;
+       }
+
+       @media screen and(max-width:630px) {
+        font-size: 1.7rem;
+      }
+
+      @media screen and(max-width:355px) {
+        font-size: 1.3rem;
+      }
+
+       
+   }
+
+   &__body {
+    align-self: start;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    width: 60vw;
+
+    @media screen and(max-width:850px) {
+      font-size: 2rem;
+      align-self: center;
+      text-align: center;
+      width: 100vw;
+      line-height: 1;
+      padding: 0 1.5rem;
+
+
+    }
+
+    @media screen and(max-width:630px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and(max-width:355px) {
+        font-size: 1.3rem;
+      }
+
+    button {
+        background-color: $color-primary;
+
+        @media screen and(max-width:630px) {
+        padding: 1.5rem 2rem;
+          }
+        }
+
+}
+
+}

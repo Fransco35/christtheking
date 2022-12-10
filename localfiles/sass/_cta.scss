@@ -1,0 +1,51 @@
+.cta {
+    grid-column: full-start / full-end;
+
+    background-color: $color-primary;
+    padding: 2rem;
+    margin-top: 3rem;
+
+
+    display: grid;
+   justify-content: center;
+
+    &__details {
+
+        color: $color-white;
+        padding: 2rem 0 0 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+
+       
+
+
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+        color: $color-btn;
+        }
+
+        h2{
+          color: $color-btn; 
+        }
+
+        p {
+            font-size: 1.7rem;
+
+            @media screen and(max-width:600px) {
+                font-size: 1.5rem;
+              }
+        }
+
+        ul {
+            font-size: 1.7rem;
+            list-style: none;
+        }
+    }
+}
